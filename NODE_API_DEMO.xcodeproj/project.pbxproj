@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66D92C4F15D065EA0015B8A4 /* libnode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D92C4E15D065EA0015B8A4 /* libnode.a */; };
+		66EFF37015CAD846008A3286 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EFF36F15CAD846008A3286 /* Storyboard.storyboard */; };
+		66EFF37615CAD8FC008A3286 /* VTConnectionTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EFF37515CAD8FC008A3286 /* VTConnectionTable.m */; };
+		66EFF37F15CAE6E6008A3286 /* VTDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EFF37E15CAE6E6008A3286 /* VTDemoView.m */; };
+		66FA163315C9A28000815A2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA163215C9A28000815A2D /* UIKit.framework */; };
+		66FA163515C9A28000815A2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA163415C9A28000815A2D /* Foundation.framework */; };
+		66FA163715C9A28000815A2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA163615C9A28000815A2D /* CoreGraphics.framework */; };
+		66FA163D15C9A28000815A2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66FA163B15C9A28000815A2D /* InfoPlist.strings */; };
+		66FA163F15C9A28000815A2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FA163E15C9A28000815A2D /* main.m */; };
+		66FA164315C9A28000815A2D /* VTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FA164215C9A28000815A2D /* VTAppDelegate.m */; };
+		66FA165D15C9AAC200815A2D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FA165C15C9AAC200815A2D /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66D92C4C15D065E30015B8A4 /* nBlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nBlue.h; sourceTree = "<group>"; };
+		66D92C4D15D065E30015B8A4 /* libNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libNode.h; sourceTree = "<group>"; };
+		66D92C4E15D065EA0015B8A4 /* libnode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libnode.a; sourceTree = "<group>"; };
+		66EFF36F15CAD846008A3286 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		66EFF37415CAD8FC008A3286 /* VTConnectionTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTConnectionTable.h; sourceTree = "<group>"; };
+		66EFF37515CAD8FC008A3286 /* VTConnectionTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTConnectionTable.m; sourceTree = "<group>"; };
+		66EFF37D15CAE6E6008A3286 /* VTDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDemoView.h; sourceTree = "<group>"; };
+		66EFF37E15CAE6E6008A3286 /* VTDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDemoView.m; sourceTree = "<group>"; };
+		66FA162E15C9A28000815A2D /* NODE_API_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NODE_API_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66FA163215C9A28000815A2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66FA163415C9A28000815A2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66FA163615C9A28000815A2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66FA163A15C9A28000815A2D /* NODE_API_DEMO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NODE_API_DEMO-Info.plist"; sourceTree = "<group>"; };
+		66FA163C15C9A28000815A2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66FA163E15C9A28000815A2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66FA164015C9A28000815A2D /* NODE_API_DEMO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NODE_API_DEMO-Prefix.pch"; sourceTree = "<group>"; };
+		66FA164115C9A28000815A2D /* VTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VTAppDelegate.h; path = NODE_API_DEMO/VTAppDelegate.h; sourceTree = "<group>"; };
+		66FA164215C9A28000815A2D /* VTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VTAppDelegate.m; path = NODE_API_DEMO/VTAppDelegate.m; sourceTree = "<group>"; };
+		66FA165C15C9AAC200815A2D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66FA162B15C9A28000815A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FA165D15C9AAC200815A2D /* CoreBluetooth.framework in Frameworks */,
+				66FA163315C9A28000815A2D /* UIKit.framework in Frameworks */,
+				66FA163515C9A28000815A2D /* Foundation.framework in Frameworks */,
+				66FA163715C9A28000815A2D /* CoreGraphics.framework in Frameworks */,
+				66D92C4F15D065EA0015B8A4 /* libnode.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66EFF36E15CAD830008A3286 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66EFF36F15CAD846008A3286 /* Storyboard.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		66EFF37B15CAE6B1008A3286 /* NODE Connection Table */ = {
+			isa = PBXGroup;
+			children = (
+				66EFF37415CAD8FC008A3286 /* VTConnectionTable.h */,
+				66EFF37515CAD8FC008A3286 /* VTConnectionTable.m */,
+			);
+			name = "NODE Connection Table";
+			sourceTree = "<group>";
+		};
+		66EFF37C15CAE6C3008A3286 /* API Demo View */ = {
+			isa = PBXGroup;
+			children = (
+				66EFF37D15CAE6E6008A3286 /* VTDemoView.h */,
+				66EFF37E15CAE6E6008A3286 /* VTDemoView.m */,
+			);
+			name = "API Demo View";
+			sourceTree = "<group>";
+		};
+		66FA162315C9A28000815A2D = {
+			isa = PBXGroup;
+			children = (
+				66EFF36E15CAD830008A3286 /* Views */,
+				66FA167015C9B15100815A2D /* View Controllers */,
+				66FA164D15C9AA3200815A2D /* AppDelegate */,
+				66FA163815C9A28000815A2D /* NODE_API_DEMO */,
+				66FA163115C9A28000815A2D /* Frameworks */,
+				66FA162F15C9A28000815A2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66FA162F15C9A28000815A2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66FA162E15C9A28000815A2D /* NODE_API_DEMO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66FA163115C9A28000815A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66FA165C15C9AAC200815A2D /* CoreBluetooth.framework */,
+				66FA163215C9A28000815A2D /* UIKit.framework */,
+				66FA163415C9A28000815A2D /* Foundation.framework */,
+				66FA163615C9A28000815A2D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66FA163815C9A28000815A2D /* NODE_API_DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				66FA163915C9A28000815A2D /* Supporting Files */,
+			);
+			path = NODE_API_DEMO;
+			sourceTree = "<group>";
+		};
+		66FA163915C9A28000815A2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66FA164F15C9AA4500815A2D /* NODE-iOS-Lib */,
+				66FA163A15C9A28000815A2D /* NODE_API_DEMO-Info.plist */,
+				66FA163B15C9A28000815A2D /* InfoPlist.strings */,
+				66FA163E15C9A28000815A2D /* main.m */,
+				66FA164015C9A28000815A2D /* NODE_API_DEMO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66FA164D15C9AA3200815A2D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				66FA164115C9A28000815A2D /* VTAppDelegate.h */,
+				66FA164215C9A28000815A2D /* VTAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		66FA164F15C9AA4500815A2D /* NODE-iOS-Lib */ = {
+			isa = PBXGroup;
+			children = (
+				66D92C4E15D065EA0015B8A4 /* libnode.a */,
+				66D92C4C15D065E30015B8A4 /* nBlue.h */,
+				66D92C4D15D065E30015B8A4 /* libNode.h */,
+			);
+			name = "NODE-iOS-Lib";
+			sourceTree = "<group>";
+		};
+		66FA167015C9B15100815A2D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66EFF37C15CAE6C3008A3286 /* API Demo View */,
+				66EFF37B15CAE6B1008A3286 /* NODE Connection Table */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66FA162D15C9A28000815A2D /* NODE_API_DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66FA164615C9A28000815A2D /* Build configuration list for PBXNativeTarget "NODE_API_DEMO" */;
+			buildPhases = (
+				66FA162A15C9A28000815A2D /* Sources */,
+				66FA162B15C9A28000815A2D /* Frameworks */,
+				66FA162C15C9A28000815A2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NODE_API_DEMO;
+			productName = NODE_API_DEMO;
+			productReference = 66FA162E15C9A28000815A2D /* NODE_API_DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66FA162515C9A28000815A2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VT;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 66FA162815C9A28000815A2D /* Build configuration list for PBXProject "NODE_API_DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 66FA162315C9A28000815A2D;
+			productRefGroup = 66FA162F15C9A28000815A2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66FA162D15C9A28000815A2D /* NODE_API_DEMO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66FA162C15C9A28000815A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FA163D15C9A28000815A2D /* InfoPlist.strings in Resources */,
+				66EFF37015CAD846008A3286 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66FA162A15C9A28000815A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66FA163F15C9A28000815A2D /* main.m in Sources */,
+				66FA164315C9A28000815A2D /* VTAppDelegate.m in Sources */,
+				66EFF37615CAD8FC008A3286 /* VTConnectionTable.m in Sources */,
+				66EFF37F15CAE6E6008A3286 /* VTDemoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66FA163B15C9A28000815A2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66FA163C15C9A28000815A2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66FA164415C9A28000815A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66FA164515C9A28000815A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66FA164715C9A28000815A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NODE_API_DEMO/NODE_API_DEMO-Prefix.pch";
+				INFOPLIST_FILE = "NODE_API_DEMO/NODE_API_DEMO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NODE_API_DEMO\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66FA164815C9A28000815A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NODE_API_DEMO/NODE_API_DEMO-Prefix.pch";
+				INFOPLIST_FILE = "NODE_API_DEMO/NODE_API_DEMO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NODE_API_DEMO\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66FA162815C9A28000815A2D /* Build configuration list for PBXProject "NODE_API_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66FA164415C9A28000815A2D /* Debug */,
+				66FA164515C9A28000815A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66FA164615C9A28000815A2D /* Build configuration list for PBXNativeTarget "NODE_API_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66FA164715C9A28000815A2D /* Debug */,
+				66FA164815C9A28000815A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66FA162515C9A28000815A2D /* Project object */;
+}

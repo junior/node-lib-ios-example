@@ -307,52 +307,52 @@
 
 - (void)nodeDeviceDidUpdateGyroReading:(VTNodeDevice *)device withReading:(VTSensorReading*)reading
 {
-    NSString *xReading = [[NSString alloc] initWithFormat:@"%i", reading.x];
+    NSString *xReading = [[NSString alloc] initWithFormat:@"%.2f", reading.x];
     [self.KoreGyroX setText:xReading];
     
-    NSString *yReading = [[NSString alloc] initWithFormat:@"%i", reading.y];
+    NSString *yReading = [[NSString alloc] initWithFormat:@"%.2f", reading.y];
     [self.KoreGyroY setText:yReading];
     
-    NSString *zReading = [[NSString alloc] initWithFormat:@"%i", reading.z];
+    NSString *zReading = [[NSString alloc] initWithFormat:@"%.2f", reading.z];
     [self.KoreGyroZ setText:zReading];
 }
 
 - (void)nodeDeviceDidUpdateAccReading:(VTNodeDevice *)device withReading:(VTSensorReading*)reading;
 {
-    NSString *xReading = [[NSString alloc] initWithFormat:@"%" PRId16, reading.x];
+    NSString *xReading = [[NSString alloc] initWithFormat:@"%.2f", reading.x];
     [self.KoreAccX setText:xReading];
     
-    NSString *yReading = [[NSString alloc] initWithFormat:@"%i", reading.y];
+    NSString *yReading = [[NSString alloc] initWithFormat:@"%.2f", reading.y];
     [self.KoreAccY setText:yReading];
     
-    NSString *zReading = [[NSString alloc] initWithFormat:@"%i", reading.z];
+    NSString *zReading = [[NSString alloc] initWithFormat:@"%.2f", reading.z];
     [self.KoreAccZ setText:zReading];
 }
 
 - (void)nodeDeviceDidUpdateMagReading:(VTNodeDevice *)device withReading:(VTSensorReading*)reading;
 {
-    NSString *xReading = [[NSString alloc] initWithFormat:@"%i", reading.x];
+    NSString *xReading = [[NSString alloc] initWithFormat:@"%.2f", reading.x];
     [self.KoreMagX setText:xReading];
     
-    NSString *yReading = [[NSString alloc] initWithFormat:@"%i", reading.y];
+    NSString *yReading = [[NSString alloc] initWithFormat:@"%.2f", reading.y];
     [self.KoreMagY setText:yReading];
     
-    NSString *zReading = [[NSString alloc] initWithFormat:@"%i", reading.z];
+    NSString *zReading = [[NSString alloc] initWithFormat:@"%.2f", reading.z];
     [self.KoreMagZ setText:zReading];
 }
 
 - (void)nodeDeviceDidUpdateQuatReading:(VTNodeDevice *)device withReading:(VTQuatReading *)reading
 {
-    NSString *q0Reading = [[NSString alloc] initWithFormat:@"%f", reading.q0];
+    NSString *q0Reading = [[NSString alloc] initWithFormat:@"%.2f", reading.q0];
     [self.KoreQ0 setText:q0Reading];
     
-    NSString *q1Reading = [[NSString alloc] initWithFormat:@"%f", reading.q1];
+    NSString *q1Reading = [[NSString alloc] initWithFormat:@"%.2f", reading.q1];
     [self.KoreQ1 setText:q1Reading];
     
-    NSString *q2Reading = [[NSString alloc] initWithFormat:@"%f", reading.q2];
+    NSString *q2Reading = [[NSString alloc] initWithFormat:@"%.2f", reading.q2];
     [self.KoreQ2 setText:q2Reading];
     
-    NSString *q3Reading = [[NSString alloc] initWithFormat:@"%f", reading.q3];
+    NSString *q3Reading = [[NSString alloc] initWithFormat:@"%.2f", reading.q3];
     [self.KoreQ3 setText:q3Reading];
 }
 
@@ -455,12 +455,12 @@
         if (quatButton.selected == TRUE) {
             quatButton.selected = FALSE;
             NSLog(@"Stop stream quat");
-            [self.TheDevice setStreamModeOriQuat:FALSE];
+            [self.TheDevice setStreamModeOriYpr:FALSE QuatMode:FALSE];
         }
         else {
             quatButton.selected = TRUE;
             NSLog(@"Stream Quat");
-            [self.TheDevice setStreamModeOriQuat:TRUE];
+            [self.TheDevice setStreamModeOriYpr:FALSE QuatMode:TRUE];
         }
     }
 }
